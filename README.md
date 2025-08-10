@@ -1,50 +1,58 @@
-The Sea Siren Text Adventure Game
-Overview
-The Sea Siren is a text-based adventure game where you explore the wreckage of a sunken luxury cruise liner, uncover its secrets, and survive its many dangers. From random shark attacks to ghostly traps, each room hides opportunities and threats. The ultimate goal: escape to the surface with the required treasures before it's too late.
+# The Sea Siren Text Adventure Game
 
-Story
-You slip through a porthole into the wreck of the Sea Siren, a ship lost on its maiden voyage. The luxury and laughter of its passengers have been replaced by silence, decay, and restless spirits. The only way out is forward — but the deeper you explore, the more the ship’s deadly secrets emerge.
+***  
 
-Key Features
-Random Shark Spawns – Sharks are placed randomly in 5 rooms each playthrough (excluding Passenger Quarters and Dining Hall).
+## Overview
+The Sea Siren is a text based adventure where you explore a sunken luxury cruise liner, collect key items, outsmart hazards, and make your escape. The ship is full of secrets, random shark encounters, and one very moody ghost.
 
-Look-First Survival Mechanic – Always look around upon entering a room; failing to do so can be fatal.
+***  
 
-Ghost Door Trap – In the Dining Hall, a ghostly presence will trap you if you don’t look first.
+## Story
+You slip through a porthole into the wreck of the Sea Siren, a ship lost on its maiden voyage. The laughter and light are gone, replaced by cold water, drifting uniforms, and restless spirits. Forward is the only way out.
 
-Item-Based Progression – Acquire tools (Crowbar, Nut and Bolt, Knife, Map, Ancient Artifact, Metal Coffee Cup) to survive, solve obstacles, and escape.
+***  
 
-Observation Deck Repair – Fix a broken door hinge using collected tools to reach the final stages.
+## Key Features
+* Random shark spawns in five rooms each playthrough, never in Passenger Quarters or Dining Hall
+* Look first survival loop that forces careful play on entry to each room
+* Dining Hall ghost door trap that can be neutralized if you notice it in time
+* Item based progression with Knife, Metal Coffee Cup, Crowbar, Nut and Bolt, Map Etched on Rotted Wood, and Ancient Artifact
+* Observation Deck hinge repair event that requires Crowbar and Nut and Bolt
+* Nonlinear room layout with multiple paths and reentry text for flavor
+* Simple inventory system and clear command set
 
-Multiple Room Paths – Non-linear exploration with rooms linked in multiple directions.
+***  
 
-Inventory System – Collect and manage items that influence survival and progression.
+## Commands
+* Movement: `N` `S` `E` `W` `U` `D`
+* Look: `L`
+* Inventory: `I`
+* Quit: `Q`
 
-How to Play
-Movement Commands:
+***  
 
-N (North), S (South), E (East), W (West), U (Up), D (Down)
+## How to Win
+Reach the Escape Boat while carrying the Ancient Artifact and the Map Etched on Rotted Wood. Without both items, the gangsters refuse to let you leave.
 
-Other Commands:
+***  
 
-L (Look Around) – Reveals items, hazards, and prevents ambushes.
+## Survival Tips
+* Look first in every room to reveal hazards and items
+* Collect everything that looks useful
+* In the Dining Hall, wedge the Metal Coffee Cup in the door after you look to block the ghost
+* Repair the Observation Deck hinge when prompted if you have the required parts
 
-I (Inventory) – Check what you’re carrying.
+***  
 
-Q (Quit) – Abandon the wreck.
+## Build and Run
+You need a C++ compiler that supports C++11 or later.
 
-Tips for Survival:
+```bash
+# Windows with g++
+g++ -std=c++11 -O2 -o sea_siren The-Sea-Siren-Text-Adventure-Game-v2.cpp
+sea_siren.exe
 
-Look first in every room to avoid shark attacks and traps.
+# macOS or Linux
+g++ -std=c++11 -O2 -o sea_siren The-Sea-Siren-Text-Adventure-Game-v2.cpp
+./sea_siren
 
-Pick up all useful items; they may be critical later.
-
-In the Dining Hall, use the Metal Coffee Cup to block the ghost’s door trap.
-
-You cannot escape without both the Ancient Artifact and the Map Etched on Rotted Wood.
-
-Win Condition
-Reach the Escape Boat with the Ancient Artifact and Map. Without them, the gangsters won’t let you leave.
-
-Developer Notes
-This project was built as a CISP 360 final project. While relatively simple in concept, the combination of non-linear exploration, survival logic, and random hazards made it a fun challenge to code. Feel free to take any part of the code for your own use — just have fun with it.
