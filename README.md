@@ -1,42 +1,50 @@
-# Sea Siren Text Adventure Game
+The Sea Siren Text Adventure Game
+Overview
+The Sea Siren is a text-based adventure game where you explore the wreckage of a sunken luxury cruise liner, uncover its secrets, and survive its many dangers. From random shark attacks to ghostly traps, each room hides opportunities and threats. The ultimate goal: escape to the surface with the required treasures before it's too late.
 
-**Author:** Matt Johns  
-**Course:** CISP 360  
-**Project:** Final Text Adventure Game
+Story
+You slip through a porthole into the wreck of the Sea Siren, a ship lost on its maiden voyage. The luxury and laughter of its passengers have been replaced by silence, decay, and restless spirits. The only way out is forward — but the deeper you explore, the more the ship’s deadly secrets emerge.
 
----
+Key Features
+Random Shark Spawns – Sharks are placed randomly in 5 rooms each playthrough (excluding Passenger Quarters and Dining Hall).
 
-## Overview
+Look-First Survival Mechanic – Always look around upon entering a room; failing to do so can be fatal.
 
-*Sea Siren* is a text-based adventure game where players explore the eerie wreckage of the Sea Siren, a sunken luxury cruise liner. Navigate through various rooms, collect items, and survive dangers such as sharks and ghostly traps. Solve puzzles like fixing broken doors and use your wits to escape!
+Ghost Door Trap – In the Dining Hall, a ghostly presence will trap you if you don’t look first.
 
----
+Item-Based Progression – Acquire tools (Crowbar, Nut and Bolt, Knife, Map, Ancient Artifact, Metal Coffee Cup) to survive, solve obstacles, and escape.
 
-## Features
+Observation Deck Repair – Fix a broken door hinge using collected tools to reach the final stages.
 
-- Multiple interconnected rooms with detailed descriptions  
-- Inventory system for collecting and using items  
-- Random shark encounters with combat mechanics  
-- Puzzle elements like fixing broken doors with collected tools  
-- Multiple endings based on player choices and collected items  
-- Immersive storytelling with atmospheric descriptions  
+Multiple Room Paths – Non-linear exploration with rooms linked in multiple directions.
 
----
+Inventory System – Collect and manage items that influence survival and progression.
 
-## Gameplay
+How to Play
+Movement Commands:
 
-- Start in the Passenger Quarters and explore the ship  
-- Use commands to move (N/S/E/W/U/D), look around (L), check inventory (I), or quit (Q)  
-- Look carefully in rooms to find items necessary for progression  
-- Defend yourself from sharks using a knife  
-- Solve puzzles such as fixing the door to progress further  
-- Find both the Map and Ancient Artifact to unlock the final escape  
+N (North), S (South), E (East), W (West), U (Up), D (Down)
 
----
+Other Commands:
 
-## How to Run
+L (Look Around) – Reveals items, hazards, and prevents ambushes.
 
-1. Clone the repository  
-2. Compile the C++ source code (requires C++11 or later)  
-   ```bash
-   g++ -o SeaSirenGame The-Sea-Siren-Text-Adventure-Game.cpp
+I (Inventory) – Check what you’re carrying.
+
+Q (Quit) – Abandon the wreck.
+
+Tips for Survival:
+
+Look first in every room to avoid shark attacks and traps.
+
+Pick up all useful items; they may be critical later.
+
+In the Dining Hall, use the Metal Coffee Cup to block the ghost’s door trap.
+
+You cannot escape without both the Ancient Artifact and the Map Etched on Rotted Wood.
+
+Win Condition
+Reach the Escape Boat with the Ancient Artifact and Map. Without them, the gangsters won’t let you leave.
+
+Developer Notes
+This project was built as a CISP 360 final project. While relatively simple in concept, the combination of non-linear exploration, survival logic, and random hazards made it a fun challenge to code. Feel free to take any part of the code for your own use — just have fun with it.
